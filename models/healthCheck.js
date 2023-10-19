@@ -1,3 +1,4 @@
+
 // Load environment variables from .env file into process.env
 require('dotenv').config();
 
@@ -22,3 +23,4 @@ Account.hasMany(Assignment, { foreignKey: 'accountId', as: 'assignments' });
 Assignment.belongsTo(Account, { foreignKey: 'accountId', as: 'account' });
 
 module.exports = { db, Account, Assignment }
+
