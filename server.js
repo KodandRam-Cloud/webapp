@@ -30,6 +30,4 @@ db.sync({ force: false, alter: true })
         console.error('Error syncing database:', error);
         process.exit(1);
     });
-
-
     
